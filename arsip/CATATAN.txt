@@ -1,0 +1,11 @@
+File di folder ini TIDAK dikompilasi dan tidak dipakai aplikasi. Disimpan agar tidak ada pekerjaan yang hilang.
+
+PawPawProfile.java
+  Terpotong di tengah class (berhenti di "static class Avatar extends JComponent { String"), tanpa
+  konstruktor, isi halaman, maupun main(), sehingga tidak bisa dikompilasi. Hanya berisi komponen bantu.
+  Juga memerlukan banyak ikon (images/icon_*.png, lumi.png, milo.png, cat_face.png) yang tidak ada di ZIP.
+  Karena itu menu Profil masih "belum tersedia". Kirim versi lengkapnya bila ingin digabungkan.
+
+PawPawShop.java
+  Halaman Toko versi lama (JFrame sendiri, package default). Fungsinya (cari, filter kategori, tambah ke
+  keranjang) sudah digantikan oleh src/pawpaw/TokoPage.java yang terhubung ke Keranjang dan Checkout.

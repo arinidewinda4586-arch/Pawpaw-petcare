@@ -1,0 +1,18 @@
+{
+  "java.project.sourcePaths": [
+    "src",
+    "resources"
+  ],
+  "java.project.outputPath": "bin",
+  "java.autobuild.enabled": true,
+  "java.server.launchMode": "Standard",
+  "java.debug.settings.enableRunDebugCodeLens": true,
+  "java.debug.settings.forceBuildBeforeLaunch": true,
+  "java.debug.settings.vmArgs": "",
+  "files.encoding": "utf8",
+  "code-runner.showRunIconInEditorTitleMenu": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "java": "cd $dir ; cd ..\\.. ; cmd /c Jalankan-Windows.bat"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "PawPaw Swing",
+      "request": "launch",
+      "mainClass": "pawpaw.MainApp",
+      "cwd": "${workspaceFolder}",
+      "classPaths": [
+        "$Auto",
+        "${workspaceFolder}/resources"
+      ],
+      "console": "integratedTerminal",
+      "encoding": "UTF-8"
+    }
+  ]
+}

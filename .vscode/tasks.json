@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PawPaw: Build tanpa Maven",
+      "type": "process",
+      "command": "cmd",
+      "args": [
+        "/d",
+        "/c",
+        "Build-Windows.bat"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$javac",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
