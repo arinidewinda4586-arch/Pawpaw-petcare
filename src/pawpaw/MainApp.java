@@ -57,11 +57,35 @@ public final class MainApp extends JFrame {
         repaint();
     }
 
-    public void completeLogin(String email) {
-        session.login(email);
-        JOptionPane.showMessageDialog(this, "Selamat datang kembali! Yuk lanjut ke beranda.", "Berhasil Masuk!",
+    public void completeLogin(Database.Account account) {
+        session.login(account);
+        try {
+            Database.refreshCatalog();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Login berhasil, tetapi katalog database gagal dimuat.\n" + ex.getMessage(),
+                    "Peringatan Database", JOptionPane.WARNING_MESSAGE);
+        }
+        JOptionPane.showMessageDialog(this, "Selamat datang, " + account.name + "!", "Berhasil Masuk!",
                 JOptionPane.INFORMATION_MESSAGE);
         showHome();
+    }
+
+    /** Autentikasi akun dilakukan terhadap tabel user di MySQL. */
+    public boolean login(String identity, String password) {
+        try {
+            Database.Account account = Database.authenticate(identity, password);
+            if (account == null) return false;
+            completeLogin(account);
+            return true;
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this,
+                    "Tidak dapat menghubungi database atau memverifikasi akun.\n" +
+                    "Pastikan MySQL aktif dan library JDBC serta jBCrypt sudah dipasang.\n\n" +
+                    ex.getMessage(),
+                    "Koneksi Database Gagal", JOptionPane.ERROR_MESSAGE);
+            return false;
+        }
     }
 
     public void showHome() {

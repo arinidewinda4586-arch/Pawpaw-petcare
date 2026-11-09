@@ -86,10 +86,11 @@ public final class LoginView extends JPanel {
         submit.setMaximumSize(new Dimension(Integer.MAX_VALUE, 52));
         submit.addActionListener(e -> {
             char[] value = password.getPassword();
-            boolean missingPassword = value.length == 0 || new String(value).isBlank();
+            String secret = new String(value);
+            boolean missingPassword = value.length == 0 || secret.isBlank();
             Arrays.fill(value, '\0');
             if (email.getText().isBlank() || missingPassword) {
-                error.setText("Lengkapi email dan kata sandi.");
+                error.setText("Lengkapi email/username dan kata sandi.");
                 if (email.getText().isBlank())
                     email.requestFocusInWindow();
                 else
@@ -98,7 +99,10 @@ public final class LoginView extends JPanel {
             }
             String entered = email.getText().trim();
             password.setText("");
-            app.completeLogin(entered);
+            if (!app.login(entered, secret)) {
+                error.setText("Email/username atau kata sandi salah.");
+                password.requestFocusInWindow();
+            }
         });
         app.getRootPane().setDefaultButton(submit);
         card.add(submit);

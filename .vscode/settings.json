@@ -14,5 +14,8 @@
   "code-runner.runInTerminal": true,
   "code-runner.executorMap": {
     "java": "cd $dir ; cd ..\\.. ; cmd /c Jalankan-Windows.bat"
-  }
+  },
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ]
 }
