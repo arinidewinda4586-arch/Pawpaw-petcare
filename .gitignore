@@ -1,0 +1,10 @@
+.worktrees/
+.superpowers/
+.vscode/
+docs/
+bin/
+bin-test/
+uploads/
+*.class
+.DS_Store
+Thumbs.db
