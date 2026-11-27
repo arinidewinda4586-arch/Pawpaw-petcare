@@ -118,12 +118,12 @@ INSERT INTO `animal` (`animal_id`, `nama`, `species`, `breed`, `gender`, `age`, 
 (2, 'Jeno', 'lainnya', 'African Pygmy', 'Jantan', '8 Bulan', 'available', 'assets/img/goat.jpg', 'Kambing mini ramah, sehat, dan sangat suka bermain di halaman.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
 (3, 'Jubariyah', 'kucing', 'Bengal', 'Betina', '13 Bulan', 'available', 'assets/img/bengal.jpg', 'Kucing Bengal lincah dengan corak bulu eksotis dan sangat manja.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
 (4, 'Noe', 'kelinci', 'Rex', 'Jantan', '10 Bulan', 'available', 'assets/img/rabbit.jpg', 'Kelinci Rex berbulu halus seperti beludru, bersih, dan tenang.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
-(5, 'Miko', 'kucing', 'Domestik', 'Jantan', '2 Tahun', 'available', 'assets/img/kucing.png', 'Kucing domestik sehat, pintar, dan mudah beradaptasi di rumah.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
-(6, 'Kiko', 'anjing', 'Campuran', 'Betina', '1 Tahun', 'available', 'assets/img/dog.png', 'Anjing ramah, setia, sudah vaksin lengkap, dan senang bermain bola.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
-(7, 'Tomi', 'kucing', 'Persia', 'Jantan', '2 Tahun', 'available', 'assets/img/meng.png', 'Kucing Persia berbulu lebat, terawat, dan sangat menyukai perhatian.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
-(8, 'Boni', 'anjing', 'Golden', 'Jantan', '3 Tahun', 'available', 'assets/img/dog.png', 'Anjing keluarga yang tenang, bersahabat dengan anak-anak, dan patuh.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
-(9, 'Lili', 'kucing', 'Domestik', 'Betina', '1 Tahun', 'available', 'assets/img/cuking.png', 'Kucing mungil yang ceria, sehat, dan sudah terlatih menggunakan litter box.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
-(10, 'Piko', 'kelinci', 'Holland Lop', 'Betina', '6 Bulan', 'available', 'assets/img/kelinci.png', 'Kelinci telinga terkulai yang lucu, jinak, dan suka makan wortel segar.', '2026-11-06 10:01:11', '2026-11-06 10:01:11');
+(5, 'Miko', 'kucing', 'Domestik', 'Jantan', '2 Tahun', 'available', 'assets/img/miko.png', 'Kucing domestik sehat, pintar, dan mudah beradaptasi di rumah.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
+(6, 'Kiko', 'anjing', 'Corgi', 'Betina', '1 Tahun', 'available', 'assets/img/kiko.png', 'Anjing ramah, setia, sudah vaksin lengkap, dan senang bermain bola.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
+(7, 'Tomi', 'kucing', 'Persia', 'Jantan', '2 Tahun', 'available', 'assets/img/tomi.png', 'Kucing Persia berbulu lebat, terawat, dan sangat menyukai perhatian.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
+(8, 'Boni', 'anjing', 'Golden', 'Jantan', '3 Tahun', 'available', 'assets/img/boni.png', 'Anjing keluarga yang tenang, bersahabat dengan anak-anak, dan patuh.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
+(9, 'Lili', 'kucing', 'Domestik', 'Betina', '1 Tahun', 'available', 'assets/img/lili.png', 'Kucing mungil yang ceria, sehat, dan sudah terlatih menggunakan litter box.', '2026-11-06 10:01:11', '2026-11-06 10:01:11'),
+(10, 'Piko', 'kelinci', 'Holland Lop', 'Betina', '6 Bulan', 'available', 'assets/img/piko.png', 'Kelinci telinga terkulai yang lucu, jinak, dan suka makan wortel segar.', '2026-11-06 10:01:11', '2026-11-06 10:01:11');
 
 -- --------------------------------------------------------
 -- Struktur tabel `adoption_request`
